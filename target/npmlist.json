@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"05_01","dependencies":{"body-parser":{"version":"1.19.2"},"express":{"version":"4.17.3"},"http":{"version":"0.0.1-security"},"jasmine":{"version":"4.0.2"},"mongodb":{"version":"4.4.0"},"mongoose":{"version":"6.2.3"},"socket.io":{"version":"4.4.1"}}}
