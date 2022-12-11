@@ -21,7 +21,6 @@
     </div>
 </div>
 <script>
-    const host = process.env.PUBLIC_URL || 'http://localhost:3000' ;
     var socket = io()
     $(() => {
         $("#send").click(()=>{
@@ -38,14 +37,16 @@
     }
 
     function getMessages() {
-        $.get(host + '/messages', (data) => {
-        // $.get('https://litechat.onrender.com/messages', (data) => {
+        // $.get('http://localhost:3000/messages', (data) => {
+        //comment out the line below and uncomment the line above when working in local
+        $.get('https://litechat.onrender.com/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post(host + '/messages', message)
-        // $.post('https://litechat.onrender.com/messages', message)
+        // $.post('http://localhost:3000/messages', message)
+        //comment out the line below and uncomment the line above when working in local
+        $.post('https://litechat.onrender.com/messages', message)
     }
 </script>
