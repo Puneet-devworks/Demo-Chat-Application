@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:3000/messages', (data) => {
+        $.get('https://litechat.onrender.com/messages', (data) => {
             data.forEach(addMessage);
         })
     }
 
     function postMessage(message) {
-        $.post('http://localhost:3000/messages', message)
+        $.post('https://litechat.onrender.com/messages', message)
     }
 </script>
